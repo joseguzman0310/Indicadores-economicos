@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Cambio en Tiempo Real</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+       <center><h1>Indicadores Economicos </h1></center> 
+        <center><img src="Dinero.jpg" width="200" height="100"></center>
+        <div id="exchange-rates">
+            <div class="rate" id="dollar-rate">
+                <h2>Valor Dólar</h2>
+                <p id="dollar-value">Cargando...</p>
+            </div>
+            <div class="rate" id="uf-rate">
+                <h2>Valor UF</h2>
+                <p id="uf-value">Cargando...</p>
+            </div>
+        </div>
+        <button id="refresh" onclick="fetchExchangeRates()">Actualizar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
